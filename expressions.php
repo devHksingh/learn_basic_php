@@ -24,3 +24,14 @@ $isHungry = true;
 echo "Hungry?";
 // ternary opreator
 echo $isHungry? "Yes\n":"No\n";
+// Temperature Converter Exercise
+
+// Instructions:
+// 1. Create a variable $celsius and assign it a numeric value.
+// 2. Create a variable $fahrenheit and calculate its value using the formula: ($celsius * 9/5) + 32
+// 3. Use echo to print a message in the format: "[Celsius value]C is [Fahrenheit value]F"
+// 4. Example output: 20C is 68F
+
+$celsius = 30;
+$fahrenheit = ($celsius*9/5)+32;
+echo $celsius."C is ".$fahrenheit."F";
