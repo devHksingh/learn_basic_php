@@ -10,9 +10,9 @@ echo $greet("David");
 $numbers = [1, 2, 3, 4];
 $squared = array_map(function ($n) {
   return $n * $n;
-},$numbers);
+}, $numbers);
 
-var_dump($numbers,$squared);
+var_dump($numbers, $squared);
 
 $message = "Heloo!";
 // anonymous functions is don't have access to the variables defined outside.
@@ -32,8 +32,16 @@ $greet2 = function ($name) use (&$message) {
 };
 echo $greet2("David");
 echo "$message\n";
- $squared = array_map(function($n){
-  return $n*$n;
-},$numbers);
+$squared = array_map(function ($n) {
+  return $n * $n;
+}, $numbers);
 
-var_dump($numbers,$squared);
+var_dump($numbers, $squared);
+
+$client = "person";
+$dump = $client;
+echo "1. $dump , $client\n";
+// $client = "1";
+echo "2. $dump , $client\n";
+$dump = "2";
+echo "3. $dump , $client\n";
